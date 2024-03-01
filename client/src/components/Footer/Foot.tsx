@@ -16,10 +16,17 @@ const Foot: React.FC = () => {
   return (
     <nav className="Foot">
       <main className="FootContainer">
-        <p>
+        <p style={{ width: "50%" }}>
           <h1 style={{ color: "white" }}>COC Tech Club</h1>
         </p>
-        <section style={{ display: "flex", flexDirection: "row", gap: 10 }}>
+        <section
+          style={{
+            display: "flex",
+            alignItems: "center",
+            flexDirection: "row",
+            gap: 30,
+          }}
+        >
           {tabs.map((tab) => {
             return (
               <a href={tab.path} className="NavItems" key={tab.name}>
